@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+	<title>Idis</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="img/png" href="img\favicon.png">
+	<link rel="stylesheet" href="css\main.min.css">
+</head>
+<body class="page">
+	<div class="header">
+		<div class="header__inner page__inner">
+			<a href="#" class="logo header__logo">
+				<img src="img\logo.svg" alt="Idis" class="logo__logo">
+			</a>
+			<div class="header__nav-box">
+				<div class="header-phone header__phone">
+					<span class="header-phone__item">Тел.:
+						<a href="tel:+380577574570" class="header-phone__link">+38(057) 757-45-70</a>
+					</span>
+				</div>
+				<menu class="menu header__menu">
+					<li class="menu__item">
+						<a href="#order-section" class="menu__link current">Замовити</a>
+					</li>
+					<li class="menu__item">
+						<a href="#our-services" class="menu__link">Можливості</a>
+					</li>
+					<li class="menu__item">
+						<a href="#telemedicine" class="menu__link">Телемедицина</a>
+					</li>
+					<li class="menu__item">
+						<a href="#about-us" class="menu__link">Переваги</a>
+					</li>
+					<li class="menu__item">
+						<a href="#capabilities" class="menu__link">Дані</a>
+					</li>
+					<li class="menu__item">
+						<a href="#address-form" class="menu__link">Контакти</a>
+					</li>
+				</menu>
+			</div>
+		</div>
+	</div>
+	<main class="main">
+		<div id="order-section" class="order-section">
+			<div class="order-section__inner page__inner">
+				<h1 class="order-section__title">Інтелектуальна система дистанційної діагностики IDIS</h1>
+				<form id="order-form" method="post" action="php/sendmail.php" class="request-form order-section__request-form">
+					<div class="request-form__input-box request-form__name">
+						<input type="text" name="Name" pattern="^\D+$" placeholder="Ім'я" required="" class="request-form__item">
+					</div>
+					<div class="request-form__input-box request-form__mail">
+						<input type="text" name="E-mail" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" title="Приклад: «nick@mail.com»" placeholder="E-mail" required="" class="request-form__item">
+					</div>
+					<div class="request-form__input-box request-form__phone">
+						<input type="text" name="Phone" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" title="Приклад: «+38(044)555-55-55»" placeholder="Номер телефону" required="" class="request-form__item">
+					</div>
+					<button class="request-form__button">Залишити замовлення</button>
+				</form>
+			</div>
+			<span class="order-section__descr">Система IDIS призначена для проведення попередньої діагностики пацієнтів в фельдшерсько-акушерських пунктах, ЦПМСД, амбулаторіях, а також мобільний варіант - безпосередньо вдома у пацієнта. Використання системи IDIS можливо як сімейними лікарями, так і іншим персоналом.</span>
+			<div class="order-section__swiper-container">
+				<div class="swiper-container order-section__swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<figure class="order-section__figure">
+								<img src="img\slide_img_1.png" alt="Img" class="order-section__img">
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure class="order-section__figure">
+								<img src="img\slide_img_2.png" alt="Img" class="order-section__img">
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure class="order-section__figure">
+								<img src="img\slide_img_3.png" alt="Img" class="order-section__img">
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure class="order-section__figure">
+								<img src="img\slide_img_4.png" alt="Img" class="order-section__img">
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure class="order-section__figure">
+								<img src="img\slide_img_5.png" alt="Img" class="order-section__img">
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure class="order-section__figure">
+								<img src="img\slide_img_6.png" alt="Img" class="order-section__img">
+							</figure>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div id="our-services" class="our-services">
+			<div class="our-services__inner page__inner">
+				<h2 class="our-services__title">Можливості мобільного комплекту IDIS</h2>
+				<div class="our-services__feature-row">
+					<div class="feature our-services__feature">
+						<i class="feature__icon feature__icon-blood-pressure"></i>
+						<p class="feature__descr">Вимірювання артеріального тиску</p>
+					</div>
+					<div class="feature our-services__feature">
+						<i class="feature__icon feature__icon-cardiogram"></i>
+						<p class="feature__descr">Електрокардіографічне дослідження (12 відведень)</p>
+					</div>
+				</div>
+				<div class="our-services__feature-row">
+					<div class="feature our-services__feature">
+						<i class="feature__icon feature__icon-sugar"></i>
+						<p class="feature__descr">Вимірювання цукру у крові</p>
+					</div>
+					<div class="feature our-services__feature">
+						<i class="feature__icon feature__icon-urine-jar"></i>
+						<p class="feature__descr">Аналіз сечі (11 параметрів)</p>
+					</div>
+				</div>
+				<div class="our-services__feature-row">
+					<div class="feature our-services__feature">
+						<i class="feature__icon feature__icon-astma"></i>
+						<p class="feature__descr">Вимірювання функцій дихання (пікфлуометр)</p>
+					</div>
+					<div class="feature our-services__feature">
+						<i class="feature__icon feature__icon-heart-frequency"></i>
+						<p class="feature__descr">Вимірювання насиченості крові киснем (пульсоксиметр)</p>
+					</div>
+				</div>
+				<div class="our-services__feature-row">
+					<div class="feature our-services__feature">
+						<i class="feature__icon feature__icon-thermometer"></i>
+						<p class="feature__descr">Вимірювання температури тіла</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="telemedicine" class="telemedicine">
+			<div class="telemedicine__inner">
+				<div class="telemedicin-info telemedicine__info">
+					<h2 class="telemedicin-info__title">Робота з Порталом Телемедицини "Медстар" Telemed24</h2>
+					<ul class="telemedicin-info-list telemedicin-info__list">
+						<li class="telemedicin-info-list__item">Передача файлів з даними обстеження у будь-яку МІС</li>
+						<li class="telemedicin-info-list__item">Зручний відеозв'язок та консіліум</li>
+						<li class="telemedicin-info-list__item">Учасниками системи є виключно лікарі</li>
+						<li class="telemedicin-info-list__item">Доступ до електронної медичної картки пацієнта</li>
+					</ul>
+				</div>
+				<div class="telemedicine__img"></div>
+			</div>
+		</div>
+		<div id="about-us" class="about-us">
+			<div class="about-us__img"></div>
+			<div class="about-us-info about-us__info">
+				<h2 class="about-us-info__title">Головні переваги</h2>
+				<ul class="about-us-list about-us__list">
+					<li class="about-us-list__item">Трансфер висококваліфікованої допомоги на первинний рівень - у сільські ФАП та амбулаторії</li>
+					<li class="about-us-list__item">Підвищення якості та доступності медичних послуг у сільській медицині</li>
+					<li class="about-us-list__item">Простота надання консультації  для лікарів та пацієнтів</li>
+				</ul>
+			</div>
+		</div>
+		<div id="capabilities" class="capabilities">
+			<div class="capabilities__inner page__inner">
+				<h2 class="capabilities__title">Обробка медичних данних</h2>
+				<ul class="capabilities-list capabilities__list">
+					<li class="capabilities-list__item">Введення даних пацієнта (ID або номера карти)</li>
+					<li class="capabilities-list__item">Bluetooth, WiFi 3G/4G передача даних або USB підключення до APM сімейного лікаря</li>
+					<li class="capabilities-list__item">Offline режим: дані можуть буті зібрані при відсутності або нестабільної мережі</li>
+					<li class="capabilities-list__item">Завантаження даних: дані, зібрані в автономному режимі завантажуються в телемедичну мережу, медичну інформаційну систему, централізований архів медичних даних</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div id="address-form" class="address-form">
+			<div class="address-form__inner page__inner">
+				<div class="address-section address-form__section">
+					<span class="address-section__title">Наша адреса:</span>
+					<span class="address-section__item">61166, Україна, м.Харків,</span>
+					<span class="address-section__item">вул. Кримська, 8</span>
+				</div>
+				<div class="address-section address-form__section">
+					<span class="address-section__title">Зателефонуйте нам:</span>
+					<ul class="address-section-list address-section__list">
+						<li class="address-section-list__item">
+							Тел.: <a href="tel:+380577574570" class="address-section-list__link">+38(057) 757-45-70</a>
+						</li>
+						<li class="address-section-list__item">
+							Факс: <a href="tel:+380577140080" class="address-section-list__link">+38(057) 714-00-80</a>
+						</li>
+					</ul>
+				</div>
+				<div class="address-section address-form__section">
+					<span class="address-section__title">Напишіть нам:</span>
+					<ul class="address-section-list address-section__list">
+						<li class="address-section-list__item">
+							E-mail: <a href="mailto:nmt@techgroup.com.ua" class="address-section-list__link">nmt@techgroup.com.ua</a>
+						</li>
+						<li class="address-section-list__item">
+							Сайт: <a href="https://techgroup.com.ua" class="address-section-list__link">https://techgroup.com.ua</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="copyright__inner page__inner">
+				<span class="copyright__crp">© HMT. All rights reserved</span>
+			</div>
+		</div>
+	</footer>
+	<a href="#" class="anchor"></a>
+	<div class="test"></div>
+	<script src="js\main.min.js"></script>
+</body>
+</html>
