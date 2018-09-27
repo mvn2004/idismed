@@ -120,17 +120,20 @@
 				<div class="our-services__feature-row">
 					<div class="feature our-services__feature">
 						<i class="feature__icon feature__icon-sugar"></i>
-						<p class="feature__descr">Вимірювання цукру у крові</p>
+<!--						<p class="feature__descr">Вимірювання цукру у крові</p>-->
+						<p class="feature__descr">Вимірювання рівня глюкози, холестерину, кетонів у крові</p>
 					</div>
 					<div class="feature our-services__feature">
 						<i class="feature__icon feature__icon-urine-jar"></i>
-						<p class="feature__descr">Аналіз сечі (11 параметрів)</p>
+<!--						<p class="feature__descr">Аналіз сечі (11 параметрів)</p>-->
+						<p class="feature__descr">Клінічний аналіз сечі (11 параметрів, метод "сухої" хімії)</p>
 					</div>
 				</div>
 				<div class="our-services__feature-row">
 					<div class="feature our-services__feature">
 						<i class="feature__icon feature__icon-astma"></i>
-						<p class="feature__descr">Вимірювання функцій дихання (пікфлуометр)</p>
+<!--						<p class="feature__descr">Вимірювання функцій дихання (пікфлуометр)</p>-->
+						<p class="feature__descr">Дослідження функцій дихання (спірометр)</p>
 					</div>
 					<div class="feature our-services__feature">
 						<i class="feature__icon feature__icon-heart-frequency"></i>
@@ -138,9 +141,32 @@
 					</div>
 				</div>
 				<div class="our-services__feature-row">
+				    <!-- Новый пункт: -->
+					<div class="feature our-services__feature">
+						<i class="feature__icon feature__icon-heart-frequency"></i>
+						<p class="feature__descr">Вимірювання частоти пульсу (пульсоксиметр)</p>
+					</div>
 					<div class="feature our-services__feature">
 						<i class="feature__icon feature__icon-thermometer"></i>
 						<p class="feature__descr">Вимірювання температури тіла</p>
+					</div>
+				</div>
+				<!-- Новые 3 пункта: -->
+				<div class="our-services__feature-row">
+					<div class="feature our-services__feature">
+						<i class="feature__icon2 feature__icon2-camera"></i>
+<!--						<p class="feature__descr">Вимірювання функцій дихання (пікфлуометр)</p>-->
+						<p class="feature__descr">Фотозйомка та аудіо запис</p>
+					</div>
+					<div class="feature our-services__feature">
+						<i class="feature__icon2 feature__icon2-upload"></i>
+						<p class="feature__descr">Передача даних для телемедичних консультацій в автоматичному режимі</p>
+					</div>
+				</div>
+				<div class="our-services__feature-row">
+					<div class="feature our-services__feature">
+						<i class="feature__icon2 feature__icon2-cloud"></i>
+						<p class="feature__descr">Обмін  даними та результатами обстеження за допомогою веб-платформи</p>
 					</div>
 				</div>
 			</div>
@@ -174,10 +200,16 @@
 			<div class="capabilities__inner page__inner">
 				<h2 class="capabilities__title">Обробка медичних данних</h2>
 				<ul class="capabilities-list capabilities__list">
-					<li class="capabilities-list__item">Введення даних пацієнта (ID або номера карти)</li>
-					<li class="capabilities-list__item">Bluetooth, WiFi 3G/4G передача даних або USB підключення до APM сімейного лікаря</li>
-					<li class="capabilities-list__item">Offline режим: дані можуть буті зібрані при відсутності або нестабільної мережі</li>
-					<li class="capabilities-list__item">Завантаження даних: дані, зібрані в автономному режимі завантажуються в телемедичну мережу, медичну інформаційну систему, централізований архів медичних даних</li>
+<!--					<li class="capabilities-list__item">Введення даних пацієнта (ID або номера карти)</li>-->
+					<li class="capabilities-list__item">Введення даних пацієнта (демографічні та антропометричні) у ручному режимі або шляхом зчитування безконтактної картки</li>
+<!--					<li class="capabilities-list__item">Bluetooth, WiFi 3G/4G передача даних або USB підключення до APM сімейного лікаря</li>-->
+					<li class="capabilities-list__item">Передача даних LAN, USB – інтерфейс підключення до АРМ медичного працівника або бездротовий - Bluetooth, WiFi, 3G/4G</li>
+<!--					<li class="capabilities-list__item">Offline режим: дані можуть буті зібрані при відсутності або нестабільної мережі</li>-->
+					<li class="capabilities-list__item">Offline - збір та зберігання даних обстеження до синхронізації з Хмарним сховищем з використанням мережі Internet при відсутності або нестабільної мережі</li>
+					<!-- Новый пункт Online -->
+					<li class="capabilities-list__item">Online - передача даних обстеження до Хмарного сховища з використанням мережі Internet</li>
+<!--					<li class="capabilities-list__item">Завантаження даних: дані, зібрані в автономному режимі завантажуються в телемедичну мережу, медичну інформаційну систему, централізований архів медичних даних</li>-->
+					<li class="capabilities-list__item">Зібрані дані в автономному режимі завантажуються в телемедичну мережу, медичну інформаційну систему, централізований архів медичних даних</li>
 				</ul>
 			</div>
 		</div>
@@ -187,8 +219,10 @@
 			<div class="address-form__inner page__inner">
 				<div class="address-section address-form__section">
 					<span class="address-section__title">Наша адреса:</span>
-					<span class="address-section__item">61166, Україна, м.Харків,</span>
-					<span class="address-section__item">вул. Кримська, 8</span>
+<!--					<span class="address-section__item">61166, Україна, м.Харків,</span>-->
+					<span class="address-section__item">61002, Україна, м.Харків,</span>
+<!--					<span class="address-section__item">вул. Кримська, 8</span>-->
+					<span class="address-section__item">вул. Ярослава Мудрого, 15</span>
 				</div>
 				<div class="address-section address-form__section">
 					<span class="address-section__title">Зателефонуйте нам:</span>

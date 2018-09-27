@@ -7,3 +7,45 @@ main .rework {
   left: 0;
   width: 100%;
 }
+
+@font-face {
+  font-family: Icomoon2;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Icomoon/Icomoon2.eot) format("embedded-opentype"),url(../fonts/Icomoon/Icomoon2.woff) format("woff"),url(../fonts/Icomoon/Icomoon2.ttf) format("truetype"),url(../fonts/Icomoon/Icomoon2.svg) format("svg");
+  src: url(../fonts/Icomoon/Icomoon2.eot);
+}
+
+.feature__icon2 {
+	color: #F66475;
+	margin-right: 35px;
+}
+
+.feature__icon2::before {
+	font-family: Icomoon2;
+	font-size: 50px;
+}
+
+[class*=icon2-],[class^=icon2-] {
+  font-family: Icomoon2 !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  moz-osx-font-smoothing: grayscale;
+  speak: none;
+  text-transform: none;
+  webkit-font-smoothing: antialiased;
+}
+
+[class*=icon2-camera]:before,[class^=icon2-camera]:before {
+  content: "\e90f";
+}
+
+[class*=icon2-upload]:before,[class^=icon2-upload]:before {
+  content: "\e9c6";
+}
+
+[class*=icon2-cloud]:before,[class^=icon2-cloud]:before {
+  content: "\eac4";
+}
