@@ -1,0 +1,9 @@
+main .rework {
+  color: red;
+  font-size: 6em;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+}
