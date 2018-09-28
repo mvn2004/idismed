@@ -28,3 +28,7 @@ main .rework {
 	background: url(../img/picture_3.jpg) 0 0/cover no-repeat;
 	width: 50%;
 }
+
+.footer {
+  background: #00ccc0;
+}
