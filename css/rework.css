@@ -23,3 +23,8 @@ main .rework {
 [class*=icon-cloud]:before,[class^=icon-cloud]:before {
   content: "\eac4";
 }
+
+.possibilities__img {
+	background: url(../img/picture_3.jpg) 0 0/cover no-repeat;
+	width: 50%;
+}
