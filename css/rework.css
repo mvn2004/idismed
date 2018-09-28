@@ -8,6 +8,10 @@ main .rework {
   width: 100%;
 }
 
+[class*=icon-sound]:before,[class^=icon-sound]:before {
+  content: "\e91a";
+}
+
 [class*=icon-camera]:before,[class^=icon-camera]:before {
   content: "\e90f";
 }
