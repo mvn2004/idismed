@@ -6,10 +6,10 @@
   $name = trim($_POST['Name']);
   }
  //Проверка правильности ввода EMAIL
-  if(trim($_POST['Email']) == '')  {
+  if(trim($_POST['E-mail']) == '')  {
   $hasError = true;
   } else {
-  $email = trim($_POST['Email']);
+  $email = trim($_POST['E-mail']);
   }
  //Проверка наличия телефона
   if(trim($_POST['Phone']) == '') {
@@ -19,8 +19,9 @@
   }
  //Если ошибок нет, отправить email
   if(!isset($hasError)) {
-  $emailTo = 'nmt@techgroup.com.ua';
-  $body = "Name: $name \n\nEmail: $email \n\nPhone: $phone";
+  // $emailTo = 'nmt@techgroup.com.ua';
+  $emailTo = 'mvn2004@mail.ru';
+  $body = "Name: $name \n\nE-mail: $email \n\nPhone: $phone";
   $headers = "Content-type: text/plain; charset='utf-8'r";
   $headers .= 'From: IDIS <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email ."r";
  mail($emailTo, $name, $body, $headers);
