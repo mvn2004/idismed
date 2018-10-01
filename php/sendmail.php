@@ -6,10 +6,10 @@
   $name = trim($_POST['Name']);
   }
  //Проверка правильности ввода EMAIL
-  if(trim($_POST['E-mail']) == '')  {
+  if(trim($_POST['Email']) == '')  {
   $hasError = true;
   } else {
-  $email = trim($_POST['E-mail']);
+  $email = trim($_POST['Email']);
   }
  //Проверка наличия телефона
   if(trim($_POST['Phone']) == '') {

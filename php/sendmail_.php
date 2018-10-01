@@ -6,18 +6,18 @@
   $name = trim($_POST['Name']);
   }
  //Проверка правильности ввода EMAIL
-  if(trim($_POST['E-mail']) == '')  {
+  if(trim($_POST['Email']) == '')  {
   $hasError = true;
   } else if (!eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", trim($_POST['E-mail']))) {
   $hasError = true;
   } else {
-  $email = trim($_POST['E-mail']);
+  $email = trim($_POST['Email']);
   }
  //Проверка наличия телефона
-  if(trim($_POST['phone']) == '') {
+  if(trim($_POST['Phone']) == '') {
   $hasError = true;
   } else {
-  $phone = trim($_POST['phone']);
+  $phone = trim($_POST['Phone']);
   }
  //Если ошибок нет, отправить email
   if(!isset($hasError)) {
