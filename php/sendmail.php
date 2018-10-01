@@ -19,8 +19,7 @@
   }
  //Если ошибок нет, отправить email
   if(!isset($hasError)) {
-  // $emailTo = 'nmt@techgroup.com.ua';
-  $emailTo = 'mvn2004@mail.ru';
+  $emailTo = 'nmt@techgroup.com.ua';
   $body = "Name: $name \n\nE-mail: $email \n\nPhone: $phone";
   $headers = "Content-type: text/plain; charset='utf-8'r";
   $headers .= 'From: IDIS <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email ."r";
