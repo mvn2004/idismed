@@ -42,4 +42,9 @@
   .possibilities__img {
     display: none;
   }
+  
+  .logo, .header-phone {
+    display: flex;
+    flex-direction: column;
+  }
 }
