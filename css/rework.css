@@ -37,3 +37,9 @@
 .copyright {
   background: #00ccc0;
 }
+
+@media only screen and (max-width:768px) {
+  .possibilities__img {
+    display: none;
+  }
+}
